@@ -57,3 +57,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Docker
 data
+
+# Auth Keys
+private_key.pem
+public_key.pem
