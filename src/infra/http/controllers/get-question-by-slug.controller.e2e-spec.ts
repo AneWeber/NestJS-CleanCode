@@ -1,11 +1,11 @@
 import { Slug } from '@/domain/forum/enterprise/entities/value-objects/slug'
 import { AppModule } from '@/infra/app.module'
-import { DatabaseModule } from '@faker-js/faker/.'
+import { DatabaseModule } from '@/infra/database/database.module'
 import { INestApplication } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { Test } from '@nestjs/testing'
 import request from 'supertest'
-import { StudentFactory } from 'test/factories/make-student'
+import { StudentFactory } from 'test/factory/make-student'
 import { QuestionFactory } from 'test/factory/make-question'
 
 describe('Get question by slug (E2E)', () => {

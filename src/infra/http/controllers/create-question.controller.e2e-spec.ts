@@ -1,11 +1,11 @@
 import { AppModule } from '@/infra/app.module'
 import { PrismaService } from '@/infra/database/prisma/prisma.service'
-import { DatabaseModule } from '@faker-js/faker/.'
+import { DatabaseModule } from '@/infra/database/database.module'
 import { INestApplication } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { Test } from '@nestjs/testing'
 import request from 'supertest'
-import { StudentFactory } from 'test/factories/make-student'
+import { StudentFactory } from 'test/factory/make-student'
 
 describe('Create question (E2E)', () => {
   let app: INestApplication
